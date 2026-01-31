@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Traveler Reviews - TravelSphere</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">✈️ TravelSphere Reviews</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="national.html">National</a>
+      <a href="international.html">International</a>
+      <a href="hotels.html">Hotels</a>
+      <a href="food.html">Food</a>
+      <a href="login.html" class="btn">Login</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero small-hero" style="background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1600');">
+    <div class="overlay">
+      <h1>Traveler Reviews</h1>
+      <p>Share your experiences and inspire others to explore!</p>
+    </div>
+  </section>
+
+  <!-- Review Form -->
+  <main class="reviews">
+    <form class="card review-form" onsubmit="return addReview()">
+      <h2>Leave a Review</h2>
+      <input type="text" id="reviewer" placeholder="Your name" required />
+      <input type="text" id="destination" placeholder="Destination (e.g., Goa, Paris)" required />
+      <select id="rating" required>
+        <option value="5">⭐⭐⭐⭐⭐</option>
+        <option value="4">⭐⭐⭐⭐</option>
+        <option value="3">⭐⭐⭐</option>
+        <option value="2">⭐⭐</option>
+        <option value="1">⭐</option>
+      </select>
+      <textarea id="comment" placeholder="Your feedback..." required></textarea>
+      <button type="submit" class="btn">Submit Review</button>
+    </form>
+
+    <!-- Review Cards -->
+    <div id="reviews" class="review-list"></div>
+  </main>
+
+  <footer>
+    <p>© 2026 TravelSphere | Reviews from real travelers</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>TravelSphere Login</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">🌍 TravelSphere</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="national.html">National</a>
+      <a href="international.html">International</a>
+      <a href="hotels.html">Hotels</a>
+      <a href="food.html">Food</a>
+      <a href="reviews.html">Reviews</a>
+      <a href="login.html" class="btn">Login</a>
+    </nav>
+  </header>
+
+  <!-- Login Hero with Background Video -->
+  <section class="login-hero">
+    <!-- Background video -->
+    <video autoplay muted loop class="bg-video">
+      <source src="videoplayback.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+    <!-- Overlay with login form -->
+    <div class="overlay">
+      <form class="login-form" method="POST" action="/login">
+        <h2>Sign In</h2>
+        <div class="input-group">
+          <span class="icon">👤</span>
+          <input type="text" name="username" placeholder="Username" required />
+        </div>
+        <div class="input-group">
+          <span class="icon">🔒</span>
+          <input type="password" name="password" placeholder="Password" required />
+        </div>
+        <button type="submit" class="btn">Login</button>
+        <p>Or login with:</p>
+        <div class="social-buttons">
+          <button type="button" class="btn google">Google</button>
+          <button type="button" class="btn facebook">Facebook</button>
+        </div>
+      </form>
+    </div>
+  </section>
+</body>
+</html>

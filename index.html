@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Travel & Tourism Website</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f5f5f5;
+    }
+
+    /* NAVBAR */
+    .navbar {
+      background: #ffffff;
+      padding: 15px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    .logo {
+      font-size: 22px;
+      font-weight: bold;
+      color: #0a8f6a;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+      margin: 0;
+      padding: 0;
+      align-items: center;
+    }
+
+    .nav-links li {
+      position: relative;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #111;
+      font-size: 15px;
+      font-weight: 500;
+    }
+
+    .nav-links a:hover {
+      color: #0a8f6a;
+    }
+
+    /* DROPDOWN */
+    .dropdown-menu {
+      position: absolute;
+      top: 35px;
+      left: 0;
+      background: #ffffff;
+      width: 260px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+      border-radius: 8px;
+      display: none;
+      padding: 10px 0;
+      z-index: 1000;
+    }
+
+    .dropdown-menu a {
+      display: block;
+      padding: 12px 20px;
+      color: #222;
+      font-size: 14px;
+    }
+
+    .dropdown-menu a:hover {
+      background: #f2f2f2;
+    }
+
+    /* SHOW ON HOVER */
+    .dropdown:hover .dropdown-menu {
+      display: block;
+    }
+
+    /* HERO SECTION (optional, for look) */
+    .hero {
+      height: 70vh;
+      background: linear-gradient(
+        rgba(0,0,0,0.3),
+        rgba(0,0,0,0.3)
+      ),
+      url("https://images.unsplash.com/photo-1501785888041-af3ef285b470") center/cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 20px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="logo">TravelSphere</div>
+
+    <ul class="nav-links">
+     
+
+      <li class="dropdown">
+        <a href="#">Our Tours ▾</a>
+        <div class="dropdown-menu">
+          <a href="#">Northern Lights Tours</a>
+          <a href="#">Day Tours</a>
+          <a href="#">Multi-Day Tours</a>
+          <a href="#">Chinese Tours 中文团</a>
+          <a href="#">Self Drive Activities</a>
+          <a href="#">Volcano Tours</a>
+          <a href="#">Private Tours</a>
+          <a href="#">New Tours</a>
+          <a href="#">Bestsellers</a>
+          <a href="#">Deals</a>
+        </div>
+      </li>
+
+      
+
+      <li class="dropdown">
+        <a href="#">More ▾</a>
+        <div class="dropdown-menu">
+          <a href="#">About Us</a>
+          <a href="#">Blogs</a>
+          <a href="#">Contact Us</a>
+          <a href="#">Find Your Bus Stop</a>
+          <a href="#">About Iceland</a>
+          <a href="#">Reviews</a>
+          <a href="#">What to do in Iceland</a>
+        </div>
+      </li>
+
+      
+    </ul>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div>
+      <h1>Go Far. See Better.</h1>
+      <p>Multi-Day Trips With More Adventures</p>
+    </div>
+  </section>
+
+</body>
+</html>
